@@ -37,7 +37,7 @@ public class DBService {
 		tecnicoRepository.saveAll(Arrays.asList(tec1));
 		clienteRepository.saveAll(Arrays.asList(cli1));
 		chamadoRepository.saveAll(Arrays.asList(c1));
-		
+				
 	}
 
 }
