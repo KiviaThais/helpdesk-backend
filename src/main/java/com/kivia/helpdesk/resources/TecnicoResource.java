@@ -17,8 +17,6 @@ import com.kivia.helpdesk.domain.Tecnico;
 import com.kivia.helpdesk.domain.dtos.TecnicoDTO;
 import com.kivia.helpdesk.services.TecnicoService;
 
-import jakarta.validation.constraints.AssertFalse.List;
-
 @RestController
 @RequestMapping(value = "/tecnicos")
 public class TecnicoResource {
