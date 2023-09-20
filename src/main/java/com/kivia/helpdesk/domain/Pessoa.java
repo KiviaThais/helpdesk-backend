@@ -130,6 +130,4 @@ public abstract class Pessoa implements Serializable{
 		return Objects.equals(cpf, other.cpf) && Objects.equals(id, other.id);
 	}
 	
-		
-
 }

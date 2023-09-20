@@ -41,12 +41,12 @@ public class TecnicoService {
 	private void validaCpfEEmail(TecnicoDTO objDTO) {
 		Optional<Pessoa> obj = pessoaRepository.findByCpf(objDTO.getCpf());
 		if(obj.isPresent() && obj.get().getId() != objDTO.getId()) {
-			throw new DataIntegrityViolationException("CPF já cadastrado no sistem!");
+			throw new DataIntegrityViolationException("CPF já cadastrado no sistema!");
 		}
 		
 		obj = pessoaRepository.findByEmail(objDTO.getEmail());
 		if(obj.isPresent() && obj.get().getId() != objDTO.getId()) {
-			throw new DataIntegrityViolationException("E-mail já cadastrado no sistem!");
+			throw new DataIntegrityViolationException("E-mail já cadastrado no sistema!");
 		}
 	}
 }
