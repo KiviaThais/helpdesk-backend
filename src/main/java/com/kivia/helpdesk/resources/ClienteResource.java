@@ -3,6 +3,8 @@ package com.kivia.helpdesk.resources;
 import java.net.URI;
 import java.util.stream.Collectors;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -19,8 +21,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.kivia.helpdesk.domain.Cliente;
 import com.kivia.helpdesk.domain.dtos.ClienteDTO;
 import com.kivia.helpdesk.services.ClienteService;
-
-import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/clientes")
